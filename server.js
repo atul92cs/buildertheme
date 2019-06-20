@@ -8,6 +8,9 @@ const app=express();
 const PORT=process.env.PORT||8080;
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
+app.use('/type',type);
+app.use('/location',location);
+app.use('/project',project);
 app.listen(PORT,()=>{
     console.log('server started on '+PORT);
 });
