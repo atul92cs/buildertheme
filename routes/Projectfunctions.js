@@ -14,17 +14,15 @@ cloudinary.config({
 api_secret:'AS_y6ZzH7FAjeoIxF1IjtMFKzQg'
 });
 const project=require('../models/Project');
-router.post('/add',upload.single('Image'),async(req,res)=>{
+router.post('/add',upload.single('image'),async(req,res)=>{
     const Name=req.body.name;
     const Location=req.body.location;
     const Type=req.body.type;
-    const Status=req.body.status;
     const Image=await cloudinary.v2.uploader.upload(req.file.path);
     project.create({
         Name:Name,
         Location:Location,
         Type:Type,
-        Status:Status,
         Image:Image.url
         
     }).then(()=>{
