@@ -1,8 +1,8 @@
 <div class="container">
-  
+    {{#each projects}}
     <h4>{{this.Name}}</h4>
     <img src="{{this.Image}}" alt="">
     <h5>{{this.type}}</h5>
     <h6>{{this.location}}</h6>
-
+    {{/each}}
 </div>

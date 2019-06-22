@@ -4,16 +4,15 @@
        <div class="featured">
 
            {{#each projects}}
-            <div onclick="">
-
-                <img src="{{this.Image}}" alt="">
+            <div onclick="getProperty({{this.id}})">
+                                <img src="{{this.Image}}" alt="">
                 <h4>{{this.type}}</h4>
                 <p class="lead">{{this.Name}}</p>
                 <p>{{this.location}}</p>
             </div>
             {{/each}}
        </div>
-   </div> 
+   </div>
 </div>
 <div class="about" id="about">
     <div class="container">
@@ -26,7 +25,7 @@
 <div class="contact">
     <div class="row">
         <div class="col-md-6 col-xs-12 col-sm-12">
-           
+
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
 
@@ -39,7 +38,7 @@
             <h5>&copy;Companyname</h5>
         </div>
         <div class="col-md-4 col-xs-12 col-sm-12">
-            
+
         </div>
         <div class="col-md-4 col-xs-12 col-sm-12">
 
