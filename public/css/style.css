@@ -62,8 +62,8 @@
  }
  .featured>div>img 
  {
-     height: 43vh;
-     width: 47vh;
+     height: 30vh;
+     width: 39vh;
  }
  body{
      overflow-x: hidden;
