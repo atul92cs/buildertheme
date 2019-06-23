@@ -1,15 +1,16 @@
 .wrapper
 {
   display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-  'showcase showcase type-text';
 
+  grid-template-areas:
+  'showcase showcase type-text'
+  'showcase showcase type-text-1';
+  grid-gap: 1.2em;
   margin-top: 15vh;
 }
 .showcase
 {
-  grid-area: showcase;
+  grid-area:showcase;
   display: grid;
   /*flex-direction: column;*/
 
@@ -18,14 +19,23 @@
 .type-text
 {
   grid-area:type-text;
-  display: grid;
-  text-align: center;
-  margin-left: 5px;
-  margin-top: 25vh;
-  align-items: center;
+  padding-right: 15px;
+  margin-top: 15vh;
+  justify-content:flex-start;
+  padding-top: 8vh;
   width: 100%;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  padding: 2rem 2rem 2rem;
+  max-height: 205px;
+  margin-right: 5vh;
+  padding-left: 15px;
+}
+.type-text-1
+{
+  grid-area: type-text-1;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  justify-content:flex-start;
+  padding-left:3px;
+  padding-right: 3px;
   max-height: 205px;
 
 }
