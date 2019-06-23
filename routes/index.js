@@ -17,7 +17,7 @@ router.get('/property/:id',(req,res)=>{
     const id=req.params.id;
     project.sequelize.query('select Projects.Name,Projects.Image,Types.Name as type,Locations.Name as location from Projects JOIN Types on Projects.Type=Types.id JOIN Locations on Projects.Location=Locations.id WHERE Projects.id=?',{replacements:[id],type:project.sequelize.QueryTypes.SELECT}).then(result=>{
         const project=result;
-        res.render('property',{projects:project});
+        res.render('property',{projects:project,layout:'protemplate'});
     }).catch(err=>{
         res.status(403).json({
             message:''
