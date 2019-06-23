@@ -9,7 +9,7 @@
     {
       justify-content: center;
       background: rgba(0,0,0,0.5);
-      margin: 20vh 65vh 20vh 65vh;
+      margin: 20vh 65vh 20vh 80vh;
       padding: 2vh 2vh 2vh 2vh;
        box-shadow:0 5px 65px  0 rgba(0,0,0,0.5);
     }
@@ -23,24 +23,24 @@
     #input-tab>form
     {
       padding-top: 3.5vh;
-    
+
     }
 
- .featured 
+ .featured
  {
    display: grid;
    grid-template-columns: 30% 30% 30%;
    align-items: center;
-   grid-gap: 1em;  
+   grid-gap: 1em;
    margin-left: 10vh;
  }
- .container>h1 
+ .container>h1
  {
      text-align:center;
      margin-top: 3vh;
      margin-bottom: 3vh;
  }
- .featured>div 
+ .featured>div
  {
      padding: 1em;
      background-color: #FFF5EE;
@@ -48,19 +48,19 @@
      box-shadow: 0 5px 15px 0 rgba(0, 0,0, 0.5);
 
  }
- .featured>div>h4 
+ .featured>div>h4
  {
      text-align: center;
      margin-top: 3vh;
      margin-bottom: 3vh;
  }
- .featured>div>p 
+ .featured>div>p
  {
      text-align: center;
      margin-bottom: 3vh;
-     
+
  }
- .featured>div>img 
+ .featured>div>img
  {
      height: 30vh;
      width: 39vh;
@@ -68,7 +68,7 @@
  body{
      overflow-x: hidden;
  }
- #footer 
+ #footer
  {
      text-align: center;
      margin-top: 3vh;
@@ -79,7 +79,7 @@
      width: 100%;
      padding-top: 3vh;
  }
- .about>.container>h2 
+ .about>.container>h2
  {
      text-align: center;
      margin-top: 3vh;
